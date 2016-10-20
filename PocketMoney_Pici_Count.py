@@ -57,7 +57,7 @@ if __name__ == '__main__':
         data["Active_Amount"] = "10000"
         data["Available_Amount"] = "10000"
         credits = ''.join(data["Credit_Amount"])
-        sum = (int)(credits) + sum
+        sum = int(credits)+ sum
         jsonStr = json.dumps(data, ensure_ascii=False, sort_keys=True)
         print(jsonStr)
     print("]")
